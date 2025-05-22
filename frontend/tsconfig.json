@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                      // JavaScript version to compile to
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],  // Include DOM types and latest ES features
+    "allowJs": true,                     // Allow compiling JS files (optional)
+    "skipLibCheck": true,                // Skip type checking of declaration files for faster builds
+    "esModuleInterop": true,             // Support import/export compatibility with CommonJS
+    "allowSyntheticDefaultImports": true,
+    "strict": true,                      // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",                  // Module code generation
+    "moduleResolution": "Node",          // How modules get resolved
+    "resolveJsonModule": true,
+    "isolatedModules": true,             // Needed for React's fast refresh and some bundlers
+    "noEmit": true,                      // Don't output compiled files (handled by bundler)
+    "jsx": "react-jsx"                   // Use new React JSX transform (React 17+)
+  },
+  "include": ["src"],                    // Include all source files in src folder
+  "exclude": ["node_modules", "build"]  // Exclude these folders
+}
